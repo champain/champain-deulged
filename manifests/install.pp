@@ -11,4 +11,21 @@ class deluged::install {
       require => Apt::Ppa['ppa:deluge-team/ppa']
     }
   }
+
+ $group = $::deluged::group
+ $user = $::deluged::user
+
+ group { $group:
+   ensure => present,
+   name   => $group,
+   system => true,
+ }
+
+ user { $user:
+   ensure => present,
+   name   => $user,
+   gid  => $group,
+   system => true,
+   shell  => '/usr/sbin/nologin',
+ }
 }

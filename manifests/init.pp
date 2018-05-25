@@ -41,7 +41,10 @@
 #
 # Copyright 2018 Your name here, unless otherwise noted.
 #
-class deluged {
+class deluged(
+  String $user = 'deluged',
+  String $group = 'deluged', 
+){
 
   include deluged::install
 
