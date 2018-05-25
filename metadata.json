@@ -1,0 +1,22 @@
+{
+  "name": "champain-deluged",
+  "version": "0.1.0",
+  "author": "Jacob Castello",
+  "summary": "A Puppet module to install and manage the deluged service",
+  "license": "Apache-2.0",
+  "source": "github.com",
+  "project_page": "https://github.com",
+  "issues_url": "https://github.com/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "puppetlabs-apt",
+      "version_requirement": ">= 4.5.1"
+    }
+  ],
+  "data_provider": null
+}
+
